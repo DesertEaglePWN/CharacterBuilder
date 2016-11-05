@@ -3,17 +3,17 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-  {{> PathfinderCharacterHeader}}
+  <h1 id="PageTitle">Character Builder</h1>
+  <div id="PFCharHeader">{{> PathfinderCharacterHeader}}</div>
   {{> PathfinderCharInfo}}
 </body>
 
-<template name="PathfinderCharacterHeader">
-  <div class = "TextFieldClass">
+<template id="PathfinderCharacterHeader">
+  <div id="CharacterNameBox" class="TextFieldClass">
 	<h1>Character Name</h1>
-	<input type = text name = "CharacterNameField" value = "Enter Character Name"/>
+	<input type = "text" name = "CharacterNameField" value = "Enter Character Name"/>
   </div>
-  <div class = "Dropdown Class">
+  <div id="AlignmentDropdownDiv" class = "Dropdown Class">
 	<h1>Alignment</h1>
 	<select>
 		<option>Lawful</option>
@@ -27,7 +27,7 @@
 	</select>
   </div>
   <h1>Player</h1>
-  <input type = text name = "PlayerNameField" value = "Enter Player Name"/>
+  <input type = "text" id = "PlayerNameField" value = "Enter Player Name"/>
   <h1>Character Class</h1>
 	<select>
 		<option>(Core) Barbarian</option>
@@ -43,15 +43,15 @@
 		<option>(Core) Wizard</option>
 	</select>
   <h1>Deity</h1>
-  <input type = text name = "DeityField" value = "Enter Deity"/>
+  <input type = "text" id = "DeityField" value = "Enter Deity"/>
   <h1>Deity</h1>
-  <input type = text name = "DeityField" value = "Enter Deity"/>
+  <input type = "text" id = "DeityField" value = "Enter Deity"/>
 </template>
 
-<template name="DnDCharacterHeader">
+<template id = "DnDCharacterHeader">
 	  <div class = "TextFieldClass">
 	<h1>Character Name</h1>
-	<input type = text name = "CharacterNameField" value = "Enter Character Name"/>
+	<input type = "text" name = "CharacterNameField" value = "Enter Character Name"/>
   </div>
   <div class = "Dropdown Class">
 	<h1>Alignment</h1>
@@ -67,15 +67,15 @@
 	</select>
   </div>
   <h1>Player</h1>
-  <input type = text name = "PlayerNameField" value = "Enter Player Name"/>
+  <input type = "text" id = "PlayerNameField" value = "Enter Player Name"/>
   <h1>Character Class</h1>
-  <input type = text name = "CharacterNameField" value = "Enter Character Name"/>
+  <input type = "text" id = "CharacterNameField" value = "Enter Character Name"/>
   <h1>Deity</h1>
-  <input type = text name = "DeityField" value = "Enter Deity"/>
+  <input type = "text" id = "DeityField" value = "Enter Deity"/>
 </template>
 
 
-<template name="PathfinderCharInfo">
+<template id = "PathfinderCharInfo">
   <h2>Learn Meteor!</h2>
   <ul>
     <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
@@ -85,7 +85,7 @@
   </ul>
 </template>
 
-<template name="DnDCharInfo">
+<template id = "DnDCharInfo">
   <h2>Learn Meteor!</h2>
   <ul>
     <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
