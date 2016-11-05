@@ -1,0 +1,42 @@
+<head>
+  <title>CharacterBuilder</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  {{> main}}
+  {{> info}}
+</body>
+
+<template name="main">
+  <h1>Character Name</h1>
+  <input type = text name = "CharacterNameField" value = "Enter Character Name"/>
+  <h1>Alignment</h1>
+  <select>
+    <option>Lawful</option>
+    <option>Neutral</option>
+    <option>Chaotic</option>
+  </select>
+  <select>
+    <option>Good</option>
+    <option>Neutral</option>
+    <option>Evil</option>
+  </select>
+  <h1>Player Name</h1>
+  <input type = text name = "CharacterNameField" value = "Enter Character Name"/>
+  <h1>Character Name</h1>
+  <input type = text name = "CharacterNameField" value = "Enter Character Name"/>
+ 
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="info">
+  <h2>Learn Meteor!</h2>
+  <ul>
+    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+  </ul>
+</template>
