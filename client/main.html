@@ -3,14 +3,17 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-  <h1>Character Builder!</h1>
-  {{> PathfinderCharacterHeader}}
-=======
   <h1 id="PageTitle">Character Builder</h1>
   <div id="PFCharHeader">{{> PathfinderCharacterHeader}}</div>
->>>>>>> origin/master
   {{> PathfinderCharInfo}}
+  <br>
+  <h2>Learn Meteor!</h2>
+  <ul>
+    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+  </ul>
 </body>
 
 <template name="PathfinderCharacterHeader">
@@ -32,11 +35,7 @@
 	</select>
   </div>
   <h1>Player</h1>
-<<<<<<< HEAD
-  <input type = "text" name = "PlayerNameField" value = "Enter Player Name"/>
-=======
   <input type = "text" id = "PlayerNameField" value = "Enter Player Name"/>
->>>>>>> origin/master
   <h1>Character Class</h1>
 	<select>
 		<option>Core | Barbarian</option>
@@ -72,15 +71,28 @@
     <h1>Class Level</h1>
   <input type = "number" name = "Class Level" value = "Enter Deity"/>
   <h1>Deity</h1>
-<<<<<<< HEAD
   <input type = text name = "DeityField" value = "Enter Deity"/>
   <h1>Homeland</h1>
-  <input type = text name = "DeityField" value = "Enter Deity"/>
-=======
-  <input type = "text" id = "DeityField" value = "Enter Deity"/>
-  <h1>Deity</h1>
-  <input type = "text" id = "DeityField" value = "Enter Deity"/>
->>>>>>> origin/master
+  <input type = "text" id = "DeityField" value = "Enter Homeland"/>
+  <h1>Race</h1>
+  <select>
+  		<option>Core | Dwarf</option>
+		<option>Core | Elf</option>
+		<option>Core | Gnome </option>
+		<option>Core | Half Elf</option>
+		<option>Core | Half Orc</option>
+		<option>Core | Halfling</option>
+		<option>Core | Human</option>
+		<option>Other</option>
+	</select>
+  <h1>Sex</h1>
+  <select>
+  		<option>Male</option>
+		<option>Female</option>
+		<option>Intersex</option>
+		<option>None</option>
+		<option>Other</option>
+	</select>
 </template>
 
 <template name = "DnDCharacterHeader">
@@ -91,11 +103,13 @@
   <div class = "Dropdown Class">
 	<h1>Alignment</h1>
 	<select>
+		<option>None</option>
 		<option>Lawful</option>
 		<option>Neutral</option>
 		<option>Chaotic</option>
 	</select>
 	<select>
+		<option>None</option>
 		<option>Good</option>
 		<option>Neutral</option>
 		<option>Evil</option>
@@ -111,21 +125,9 @@
 
 
 <template name = "PathfinderCharInfo">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+  
 </template>
 
 <template name = "DnDCharInfo">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+
 </template>
