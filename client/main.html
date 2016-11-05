@@ -3,7 +3,7 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <h1>Character Builder!</h1>
   {{> PathfinderCharacterHeader}}
   {{> PathfinderCharInfo}}
 </body>
@@ -27,24 +27,44 @@
 	</select>
   </div>
   <h1>Player</h1>
-  <input type = text name = "PlayerNameField" value = "Enter Player Name"/>
+  <input type = "text" name = "PlayerNameField" value = "Enter Player Name"/>
   <h1>Character Class</h1>
 	<select>
-		<option>(Core) Barbarian</option>
-		<option>(Core) Bard</option>
-		<option>(Core) Cleric</option>
-		<option>(Core) Druid</option>
-		<option>(Core) Fighter</option>
-		<option>(Core) Monk</option>
-		<option>(Core) Paladin</option>
-		<option>(Core) Ranger</option>
-		<option>(Core) Rogue</option>
-		<option>(Core) Sorcerer</option>
-		<option>(Core) Wizard</option>
+		<option>Core | Barbarian</option>
+		<option>Core |  Bard</option>
+		<option>Core | Cleric </option>
+		<option>Core | Druid</option>
+		<option>Core | Fighter</option>
+		<option>Core | Monk</option>
+		<option>Core | Paladin</option>
+		<option>Core | Ranger</option>
+		<option>Core | Rogue</option>
+		<option>Core | Sorcerer</option>
+		<option>Core | Wizard</option>
+		<option>Other</option>
 	</select>
+	<h1>Favored Class</h1>
+	<select>
+		<option>Core | Barbarian</option>
+		<option>Core | Bard</option>
+		<option>Core | Cleric </option>
+		<option>Core | Druid</option>
+		<option>Core | Fighter</option>
+		<option>Core | Monk</option>
+		<option>Core | Paladin</option>
+		<option>Core | Ranger</option>
+		<option>Core | Rogue</option>
+		<option>Core | Sorcerer</option>
+		<option>Core | Wizard</option>
+		<option>Other</option>
+	</select>
+  <h1>Class Level</h1>
+  <input type = "number" name = "Class Level" value = "Enter Deity"/>
+    <h1>Class Level</h1>
+  <input type = "number" name = "Class Level" value = "Enter Deity"/>
   <h1>Deity</h1>
   <input type = text name = "DeityField" value = "Enter Deity"/>
-  <h1>Deity</h1>
+  <h1>Homeland</h1>
   <input type = text name = "DeityField" value = "Enter Deity"/>
 </template>
 
