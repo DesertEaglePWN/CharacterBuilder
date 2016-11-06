@@ -18,21 +18,21 @@
 
 <template name="PathfinderCharacterHeader">
 	<div id="CharacterNameBox" class="TextFieldClass">
-	<h1>Character Name</h1>
-	<input type = "text" name = "CharacterNameField" value = "Enter Character Name"/>
+		<h1>Character Name</h1>
+		<input type = "text" name = "CharacterNameField" value = "Enter Character Name"/>
 	</div>
 	<div id="AlignmentDropdownDiv" class = "Dropdown Class">
-	<h1>Alignment</h1>
-	<select>
-		<option>Lawful</option>
-		<option>Neutral</option>
-		<option>Chaotic</option>
-	</select>
-	<select>
-		<option>Good</option>
-		<option>Neutral</option>
-		<option>Evil</option>
-	</select>
+		<h1>Alignment</h1>
+		<select>
+			<option>Lawful</option>
+			<option>Neutral</option>
+			<option>Chaotic</option>
+		</select>
+		<select>
+			<option>Good</option>
+			<option>Neutral</option>
+			<option>Evil</option>
+		</select>
 	</div>
 	<h1>Player</h1>
 	<input type = "text" id = "PlayerNameField" value = "Enter Player Name"/>
@@ -68,12 +68,50 @@
 	</select>
   <h1>Class Level</h1>
 	<input type = "number" name = "Class Level" value = "Enter Deity"/>
+	<div id = "PlayerNameDiv">
+		<h1>Player</h1>
+		<input type = "text" id = "PlayerNameField" value = "Enter Player Name"/>
+		<h1>Character Class</h1>
+		<select>
+			<option>Core | Barbarian</option>
+			<option>Core |  Bard</option>
+			<option>Core | Cleric </option>
+			<option>Core | Druid</option>
+			<option>Core | Fighter</option>
+			<option>Core | Monk</option>
+			<option>Core | Paladin</option>
+			<option>Core | Ranger</option>
+			<option>Core | Rogue</option>
+			<option>Core | Sorcerer</option>
+			<option>Core | Wizard</option>
+			<option>Other</option>
+		</select>
+	</div>
+	<div id = "FavoredClassDiv">
+		<h1>Favored Class</h1>
+		<select>
+			<option>Core | Barbarian</option>
+			<option>Core | Bard</option>
+			<option>Core | Cleric </option>
+			<option>Core | Druid</option>
+			<option>Core | Fighter</option>
+			<option>Core | Monk</option>
+			<option>Core | Paladin</option>
+			<option>Core | Ranger</option>
+			<option>Core | Rogue</option>
+			<option>Core | Sorcerer</option>
+			<option>Core | Wizard</option>
+			<option>Other</option>
+		</select>
+	</div>
+	<h1>Class Level</h1>
+	<input type = "number" id = "ClassLevelField" name = "Class Level" value = "Enter Deity"/>
     <h1>Class Level</h1>
-	<input type = "number" name = "Class Level" value = "Enter Deity"/>
+	<input type = "number" id = "2ndClassLevelField" name = "Class Level" value = "Enter Deity"/>
 	<h1>Deity</h1>
-	<input type = text name = "DeityField" value = "Enter Deity"/>
+	<input type = "text" id = "DeityField" value = "Enter Deity"/>
 	<h1>Homeland</h1>
-	<input type = "text" id = "DeityField" value = "Enter Homeland"/>
+	<input type = "text" id = "HomelandField" value = "Enter Homeland"/>
 	<h1>Race</h1>
 	<select>
   		<option>Core | Dwarf</option>
@@ -98,7 +136,7 @@
 <template name = "DnDCharacterHeader">
 	  <div class = "TextFieldClass">
 	<h1>Character Name</h1>
-	<input type = "text" name = "CharacterNameField" value = "Enter Character Name"/>
+	<input type = "text" id = "CharacterNameField" value = "Enter Character Name"/>
   </div>
   <div class = "Dropdown Class">
 	<h1>Alignment</h1>

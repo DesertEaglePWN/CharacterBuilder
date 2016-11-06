@@ -318,8 +318,12 @@ ul.style6 .first {
 #PFCharHeader{
 	color: red;
 }
-
-
+#AlignmentDropdownDiv, #PlayerNameDiv, #CharacterNameBox, #PageTitle, #FavoredClassDiv{
+	text-align: center;
+}
+#AlignmentDropdownDiv{
+	text-align: center;
+}
 
 
 
