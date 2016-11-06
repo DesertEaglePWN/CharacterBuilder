@@ -18,7 +18,7 @@
 
 <template name="PathfinderCharacterHeader">
 	<div id = "CharSheetImageDiv">
-		<img width = "100px" height = "100px" src="https://www.html5rocks.com/en/tutorials/shapes/getting-started/border-radius-shape.png">
+		<img width = "150px" height = "150px" src="https://www.html5rocks.com/en/tutorials/shapes/getting-started/border-radius-shape.png">
 	</div>
 	<div id = "CharHeaderInfoDiv">
 		<div id = "CharHeaderLine1">
@@ -82,11 +82,11 @@
 			</div>
 			<div id = "ClassLevelDiv">
 				<h1>Class Level</h1>
-				<input type = "number" id = "ClassLevelField" name = "Class Level" value = "Enter Deity"/>
+				<input type = "number" id = "ClassLevelField" value = "Enter Deity"/>
 			</div>
 			<div id = "SecondaryClassLevelDiv">
 				<h1>Class Level</h1>
-				<input type = "number" id = "2ndClassLevelField" name = "Class Level" value = "Enter Deity"/>
+				<input type = "number" id = "2ndClassLevelField" value = "Enter Deity"/>
 			</div>
 			<div id = "DeityDiv">
 				<h1>Deity</h1>
@@ -122,6 +122,10 @@
 					<option>Other</option>
 				</select>
 			</div>
+			<div id = "Age">
+				<h1>Age</h1>
+				<input type = "number" id = "AgeField" name = "Age" value = "Enter Age"/>
+			</div>
 		</div>
 	</div>
 </template>
@@ -134,16 +138,16 @@
   <div class = "Dropdown Class">
 	<h1>Alignment</h1>
 	<select>
-		<option>None</option>
 		<option>Lawful</option>
 		<option>Neutral</option>
 		<option>Chaotic</option>
+		<option>(Unselected)</option>
 	</select>
 	<select>
-		<option>None</option>
 		<option>Good</option>
 		<option>Neutral</option>
 		<option>Evil</option>
+		<option>(Unselected)</option>
 	</select>
   </div>
   <h1>Player</h1>
