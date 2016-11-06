@@ -315,8 +315,12 @@ ul.style6 .first {
 #PageTitle{
 	color: red;
 }
-#CharHeaderLine1 > div, #CharHeaderLine2 > div, #CharHeaderLine3 > div, #PFCharHeader > div{
+#CharHeaderLine1 > div, #CharHeaderLine2 > div, #CharHeaderLine3 > div{
 	display: inline-block;
+}
+#PFCharHeader > div{
+	display: inline-block;
+	width: 50%;
 }
 
 
