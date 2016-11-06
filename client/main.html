@@ -26,7 +26,7 @@
 		<div id = "CharHeaderLine1" >
 			<div id="CharacterNameBox" class="TextFieldClass">
 				<h1>Character Name</h1>
-				<input type = "text" value = "Enter Character Name"/>
+				<input class = "form-control" type = "text" value = "Enter Character Name"/>
 			</div>
 			<div id = "AlignmentDropdownDiv" class = "Dropdown Class">
 				<h1>Alignment</h1>
@@ -118,12 +118,45 @@
 					<option>Core | Rogue</option>
 					<option>Core | Sorcerer</option>
 					<option>Core | Wizard</option>
-					<option>Other</option>
+					<option><p>Other: <input class = "form-control" type = "text" id = "DeityField" value = "Other Class Name" disabled />  </p></option>
 				</select>
 			</div>
 			<div id = "FavoredClassDiv">
-				<h1>Favored Class</h1>
-				<select class = "form-control" >
+				<h1>Character Classes</h1>
+				<tbody>
+					<tr>
+						<th>
+						</th>
+						<th></th>
+						<th></th>
+					</tr>
+					<tr>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon">
+									<input type="checkbox" aria-label="...">
+								</span>
+								<input type="text" class="form-control" aria-label="...">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon">
+									<input type="checkbox" aria-label="...">
+								</span>
+								<input type="text" class="form-control" aria-label="...">
+							</div>
+						</td>
+						<td>							
+							<div class="input-group">
+								<span class="input-group-addon">
+									<input type="checkbox" aria-label="...">
+								</span>
+								<input type="text" class="form-control" aria-label="...">
+							</div>
+						</td>
+					</tr>
+					<!--
 					<option>Core | Barbarian</option>
 					<option>Core | Bard</option>
 					<option>Core | Cleric </option>
@@ -136,19 +169,12 @@
 					<option>Core | Sorcerer</option>
 					<option>Core | Wizard</option>
 					<option>Other</option>
-				</select>
-			</div>
-			<div id = "ClassLevelDiv">
-				<h1>Class Level</h1>
-				<input type = "number" id = "ClassLevelField" value = "Enter Deity"/>
-			</div>
-			<div id = "SecondaryClassLevelDiv">
-				<h1>Class Level</h1>
-				<input type = "number" id = "2ndClassLevelField" value = "Enter Deity"/>
+					-->
+				</tbody>
 			</div>
 			<div id = "DeityDiv">
 				<h1>Deity</h1>
-				<input type = "text" id = "DeityField" value = "Enter Deity"/>
+				<input class = "form-control" type = "text" id = "DeityField" value = "Enter Deity"/>
 			</div>
 			<div id = "HomelandDiv">
 				<h1>Homeland</h1>
