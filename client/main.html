@@ -2,9 +2,10 @@
 	<title>CharacterBuilder</title>
 	<!--USE BOOTSTRAP CSS -->
 	<!-- [Bootstrap] Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 	<!-- [Bootstrap] Optional theme -->
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	
 	<!--USE CUSTOM CSS -->
 	<link href="css/main.css" rel="stylesheet" type="text/css"/>
@@ -27,40 +28,30 @@
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			  <ul class="nav navbar-nav">
+			  <ul class="nav navbar-nav navbar-left">
 				<li class="dropdown">
 				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">File <span class="caret"></span></a>
 				  <ul class="dropdown-menu">
 					<li><a href="#">Save Character Sheet</a></li>
 					<li><a href="#">Load Character Sheet</a></li>
 					<li><a href="#">Export Sheet to PDF</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">Separated link</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">One more separated link</a></li>
 				  </ul>
 				</li>
-				<li><a href="#">Donate</a></li>
 			  </ul>
-			  <form class="navbar-form navbar-left">
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<li><a href="#">Donate</a></li>
+				</li>
+			  </ul>
+			  
+			  				
+			  
+			  <form class="navbar-form navbar-right">
 				<div class="form-group">
 				  <input type="text" class="form-control" placeholder="Search">
 				</div>
 				<button type="submit" class="btn btn-default">Submit</button>
 			  </form>
-			  <ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Link</a></li>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-				  <ul class="dropdown-menu">
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">Separated link</a></li>
-				  </ul>
-				</li>
-			  </ul>
 			</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
@@ -68,14 +59,14 @@
 	
 	<section class = "container-fluid">
 		<div class="row"></div>
-			<div id = "sidebar" class="col-md-4" >
-				<ul class="nav nav-pills nav-stacked">
+			<div id = "sidebar" class="col-md-4 col-sm-6" >
+				<ul class="nav nav-pills-inverse nav-stacked-inverse">
 				  <li role="presentation" class="active"><a href="#">Character</a></li>
 				  <li role="presentation"><a href="#">Abilities</a></li>
 				  <li role="presentation"><a href="#">Equipment and Inventory</a></li>
 				</ul>
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-8 col-sm-6">
 				<div class="container-fluid">
 				{{> PathfinderCharacterHeader}}
 				{{> PathfinderCharInfo}}
@@ -88,7 +79,8 @@
 	</section>
 	<section></section>
 	
-	<br>
+<!-- [Bootstrap] Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 <template name="PathfinderCharacterHeader">
@@ -99,11 +91,11 @@
 	</div>
 	<div id = "CharHeaderInfoDiv">
 		<div class ="container-fluid" id = "CharHeaderLine1" >
-			<div id="CharacterNameBox" class="TextFieldClass">
+			<div class = "container-fluid TextFieldClass" id="CharacterNameBox" >
 				<h1>Character Name</h1>
 				<input class = "form-control" type = "text" value = "Enter Character Name"/>
 			</div>
-			<div id = "AlignmentDropdownDiv" class = "Dropdown Class">
+			<div class = "container-fluid Dropdown Class" id = "AlignmentDropdownDiv">
 				<h1>Alignment</h1>
 				<div class="btn-group" role="group" data-toggle="buttons">
 				  <label class="btn btn-default">
@@ -132,7 +124,7 @@
 
 	
 		<div class ="container-fluid" id = "CharHeaderLine2">
-			<div id = "CharClassSelectDiv">
+			<div class = "container-fluid" id = "CharClassSelectDiv">
 				<h1>Character Class</h1>
 				<select class = "form-control">
 					<option>Core | Barbarian</option>
@@ -149,7 +141,7 @@
 					<option><p>Other: <input class = "form-control" type = "text" id = "DeityField" value = "Other Class Name" disabled />  </p></option>
 				</select>
 			</div>
-			<div id = "ClassesAndLevels">
+			<div class = "container-fluid" id = "ClassesAndLevels">
 				<h1>Character Classes</h1>
 						<div class="input-group">
 							<span style ="display: inline-block"> 							
@@ -157,33 +149,19 @@
 								<input type="number" class="input-group-addon" id = "HeightInField" aria-label="HeightInFeet">
 							</span>
 						</div>
-					<!--
-					<option>Core | Barbarian</option>
-					<option>Core | Bard</option>
-					<option>Core | Cleric </option>
-					<option>Core | Druid</option>
-					<option>Core | Fighter</option>
-					<option>Core | Monk</option>
-					<option>Core | Paladin</option>
-					<option>Core | Ranger</option>
-					<option>Core | Rogue</option>
-					<option>Core | Sorcerer</option>
-					<option>Core | Wizard</option>
-					<option>Other</option>
-					-->
 			</div>
-			<div id = "DeityDiv">
+			<div class = "container-fluid" id = "DeityDiv">
 				<h1>Deity</h1>
 				<input class = "form-control" type = "text" id = "DeityField" value = "Enter Deity"/>
 			</div>
-			<div id = "HomelandDiv">
+			<div class = "container-fluid" id = "HomelandDiv">
 				<h1>Homeland</h1>
 				<input class = "form-control" type = "text" id = "HomelandField" value = "Enter Homeland"/>
 			</div>
 		</div>
 	
 		<div class ="container-fluid" id = "CharHeaderLine3">
-			<div id = "RaceInfoDiv">
+			<div class = "container-fluid" id = "RaceInfoDiv">
 				<h1>Race</h1>
 				<select class = "form-control" >
 					<option>Core | Dwarf</option>
@@ -196,7 +174,7 @@
 					<option>Other</option>
 				</select>
 			</div>
-			<div id = "SexDiv">
+			<div class = "container-fluid" id = "SexDiv">
 				<h1>Sex</h1>
 				<select  class = "form-control">
 					<option>Male</option>
@@ -206,68 +184,61 @@
 					<option>Other</option>
 				</select>
 			</div>
-			<div id = "Age">
+			<div class = "container-fluid" id = "Age">
 				<h1>Age</h1>
 				<div class="input-group">
 					<input type="number" class="form-control" id="AgeYearField" aria-label="Age">
-					<span class="input-group-addon">YEARS</span>
+					<div class="input-group-addon">YEARS</div>
 				</div>
 			</div>
-			<div id = "Height">
+			<div class = "container-fluid" id = "Height">
 				<h1>Height</h1>
 				<div class="input-group">
 					<input type="number" class="form-control" id="HeightFtField" aria-label="HeightFeet">
 					<span class="input-group-addon">FT</span>
 					<input type="number" class="form-control" id = "HeightInField" aria-label="HeightInch">
-					<span class="input-group-addon">IN</span>
+					<div class="input-group-addon">IN</div>
 				</div>
 			</div>
-			<div id = "Weight">
+			<div class = "container-fluid" id = "Weight">
 				<h1>Weight</h1>
 				<div class="input-group">
 					<input type="number" class="form-control" id="HeightFtField" aria-label="HeightInFeet">
-					<span class="input-group-addon">LBS</span>
+					<div class="input-group-addon">LBS</div>
 					</div>
 			</div>
-			<tbody>
-				<table class="table table-hover">
-				<tr>
-					<th>Class Name</th>
-					<th>Hit Dice</th>
-					<th>Levels</th>
-				</tr>
-				<tr>
-					<td>Core | Dwarf</td>
-					<td>Core | Elf</td>
-					<td>Core | Gnome </td>
-					<td>Core | Half Elf</td>
-					<td>Core | Half Orc</td>
-					<td>Core | Halfling</td>
-					<td>Core | Human</td>
-					<td>Other</td>
-				</tr>
-				<tr>
-					<td>...</td>
-					<td>...</td>
-					<td>...</td>
-				</tr>
-				<tr>
-					<td>...</td>
-					<td>>...</td>
-					<td>>...</td>
-				</tr>
-				<tr></tr>
-				<tr></tr>
-				</table>
-			</tbody>
+			<div class = "container-fluid" id = "Hair">
+				<h1>Hair</h1>
+				<div class="input-group">
+					<input type="text" class="form-control" id="HairField" aria-label="Hair">
+				</div>
+			</div>
+			<div class = "container-fluid" id = "Eyes">
+				<h1>Eyes</h1>
+				<div class="input-group">
+					<input type="text" class="form-control" id="EyesField" aria-label="Eyes">
+				</div>
+			</div>
+			<div class="container-fluid input-group">
+				<input type="text" class="form-control" aria-label="...">
+					<div class="input-group-btn">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+					</div><!-- /btn-group -->
+			</div><!-- /input-group -->
 
 		</div>
 	</div>
 	
 </div>	
 
-<!-- [Bootstrap]Latest compiled and minified JavaScript -->
-<script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+
 </template>
 
 <template name = "DnDCharacterHeader">
