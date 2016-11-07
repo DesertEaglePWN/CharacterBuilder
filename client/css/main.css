@@ -14,9 +14,18 @@
 #ClassesAndLevels > span, input{
 	display: inline-block;
 }
+
+#sidebar{
+	margin: 0px;
+	padding: 0px;
+	
+}
+
 .col-md-4
 {
+	margin: 0px;
 	display: inline-block;
+	background: #222;
 	width: 33.3%;
 }
 
