@@ -86,11 +86,11 @@
 <template name="PathfinderCharacterHeader">
 <div class = "container" id = PFCharHeader height="150px">
 	<div class="row">
-		<div id = "CharSheetImageDiv" class="col-md-4">
+		<div id = "CharSheetImageDiv" class="col-md-4 col-sm-2">
 			<img class="img-responsive" src="images/PFlogo.jpg" />;
 		</div>
 		
-		<div id = "CharHeaderInfoDiv" class="col-md-8 col-sm-6">
+		<div id = "CharHeaderInfoDiv" class="col-md-8 col-sm-8">
 			<div class ="container-fluid form-inline" id = "CharHeaderLine1" >
 				<div class = "container-fluid TextFieldClass form-group col-md-2" id="CharacterNameBox" >
 					<label>Character Name</label>
@@ -101,38 +101,38 @@
 					<label>Alignment</label>
 					<div class="row">
 						<div class="btn-group col-md-12" role="group" data-toggle="buttons">
-						  <label class="btn btn-default">
+						  <label class="btn btn-default col-md-4">
 							<input type="radio" name="options" id="option1" autocomplete="off" data-placement="left" title="Tooltip on left"> Lawful
 						  </label>
-						  <label class="btn btn-default active">
+						  <label class="btn btn-default col-md-4 active">
 							<input type="radio" name="options" id="option2" autocomplete="off" checked> Neutral
 						  </label>
-						  <label class="btn btn-default">
+						  <label class="btn btn-default col-md-4">
 							<input type="radio" name="options" id="option3" autocomplete="off"> Chaotic
 						  </label>
 						</div>
 					</div>
 					<div class="row">
 						<div class="btn-group col-md-12" role="group" data-toggle="buttons">
-						  <label class="btn btn-default">
+						  <label class="btn btn-default col-md-4">
 							<input type="radio" name="options" id="option1" autocomplete="off"> Good
 						  </label>
-						  <label class="btn btn-default active">
+						  <label class="btn btn-default col-md-4 active">
 							<input type="radio" name="options" id="option2" autocomplete="off" checked> Neutral
 						  </label>
-						  <label class="btn btn-default">
+						  <label class="btn btn-default col-md-4">
 							<input type="radio" name="options" id="option3" autocomplete="off"> Evil
 						  </label>
-						</div>	
+						</div>
 					</div>
 				</div>
 			</div>
 
 	
-			<div class ="container-fluid row form-inline" id = "CharHeaderLine2">
+			<div class ="container-fluid form-inline" id = "CharHeaderLine2">
 				<div class = "form-inline container-fluid col-md-3" id = "CharClassSelectDiv">
 					<label>Character Class</label>
-					<select class = "form-control">
+					<select class = "form-control col-md-12">
 						<option>Core | Barbarian</option>
 						<option>Core |  Bard</option>
 						<option>Core | Cleric </option>
@@ -144,12 +144,12 @@
 						<option>Core | Rogue</option>
 						<option>Core | Sorcerer</option>
 						<option>Core | Wizard</option>
-						<option><p>Other: <input class = "form-control" type = "text" id = "DeityField" value = "Other Class Name" disabled />  </p></option>
+						<option><p>Other: <input class = "form-control" type = "text" id = "OtherClassField" value = "Other Class Name" disabled />  </p></option>
 					</select>
 				</div>
-				<div class = "container-fluid-col-md-3" id = "ClassesAndLevels">
+				<div class = "container-fluid col-md-2 col-md-offset-1" id = "ClassesAndLevels">
 					<label>Character Classes</label>
-							<div class="input-group">
+							<div class="form-group">
 								<span style ="display: inline-block"> 							
 									<input type="number" class="form-control" id="HeightFtField" aria-label="HeightInFeet">
 									<input type="number" class="input-group-addon" id = "HeightInField" aria-label="HeightInFeet">
