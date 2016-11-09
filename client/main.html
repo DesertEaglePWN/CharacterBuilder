@@ -130,32 +130,6 @@
 
 	
 			<div class ="container-fluid form-inline" id = "CharHeaderLine2">
-				<div class = "form-inline container-fluid col-md-3" id = "CharClassSelectDiv">
-					<label>Character Class</label>
-					<select class = "form-control col-md-12">
-						<option>Core | Barbarian</option>
-						<option>Core |  Bard</option>
-						<option>Core | Cleric </option>
-						<option>Core | Druid</option>
-						<option>Core | Fighter</option>
-						<option>Core | Monk</option>
-						<option>Core | Paladin</option>
-						<option>Core | Ranger</option>
-						<option>Core | Rogue</option>
-						<option>Core | Sorcerer</option>
-						<option>Core | Wizard</option>
-						<option><p>Other: <input class = "form-control" type = "text" id = "OtherClassField" value = "Other Class Name" disabled />  </p></option>
-					</select>
-				</div>
-				<div class = "container-fluid col-md-2 col-md-offset-1" id = "ClassesAndLevels">
-					<label>Character Classes</label>
-							<div class="form-group">
-								<span style ="display: inline-block"> 							
-									<input type="number" class="form-control" id="HeightFtField" aria-label="HeightInFeet">
-									<input type="number" class="input-group-addon" id = "HeightInField" aria-label="HeightInFeet">
-								</span>
-							</div>
-				</div>
 				<div class = "container-fluid col-md-3" id = "DeityDiv">
 					<label>Deity</label>
 					<input class = "form-control" type = "text" id = "DeityField" value = "Enter Deity"/>
@@ -194,23 +168,23 @@
 					<h1>Age</h1>
 					<div class="input-group">
 						<input type="number" class="form-control" id="AgeYearField" aria-label="Age">
-						<div class="input-group-addon">YEARS</div>
+						<div class="input-group-addon">years</div>
 					</div>
 				</div>
 				<div class = "container-fluid" id = "Height">
 					<h1>Height</h1>
 					<div class="input-group">
 						<input type="number" class="form-control" id="HeightFtField" aria-label="HeightFeet">
-						<span class="input-group-addon">FT</span>
-						<input type="number" class="form-control" id = "HeightInField" aria-label="HeightInch">
-						<div class="input-group-addon">IN</div>
+						<span class="input-group-addon">ft.</span>
+						<input type="number" class="form-control" id ="HeightInField" aria-label="HeightInch">
+						<div class="input-group-addon">in.</div>
 					</div>
 				</div>
 				<div class = "container-fluid" id = "Weight">
 					<h1>Weight</h1>
 					<div class="input-group">
-						<input type="number" class="form-control" id="HeightFtField" aria-label="HeightInFeet">
-						<div class="input-group-addon">LBS</div>
+						<input type="number" class="form-control" id="Weight" aria-label="Weight">
+						<div class="input-group-addon">lbs.</div>
 						</div>
 				</div>
 				<div class = "container-fluid" id = "Hair">
@@ -225,20 +199,469 @@
 						<input type="text" class="form-control" id="EyesField" aria-label="Eyes">
 					</div>
 				</div>
-				<div class="container-fluid input-group">
-					<input type="text" class="form-control" aria-label="...">
-						<div class="input-group-btn">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-								<ul class="dropdown-menu dropdown-menu-right">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li role="separator" class="divider"></li>
-									<li><a href="#">Separated link</a></li>
-								</ul>
-						</div><!-- /btn-group -->
+				
+				<div class="container-fluid input-group" id="AbilityScores"> <!-- Ability Scores-->
+					<table class="table">
+						<thead>
+							<tr>
+								<td><label>Ability Score</label></td>
+								<td><label>Total</label></td>
+								<td><label>Modifier</label></td>
+								<td><label>Base</label></td>
+								<td><label>Enhance</label></td>
+								<td><label>Misc</label></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><label id="StrengthLabel" aria-label="StrengthLabel">Strength (STR)</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><label id="DexterityLabel" aria-label="DexterityLabel">Dexterity (DEX)</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><label id="ConstitutionLabel" aria-label="ConstitutionLabel">Constitution (CON)</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><label id="IntelligenceLabel" aria-label="IntelligenceLabel">Intelligence (INT)</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><label id="WisdomLabel" aria-label="WisdomLabel">Wisdom (WIS)</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><label id="CharismaLabel" aria-label="CharismaLabel">Charisma (CHA)</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+						</tbody>
+					</table>
 				</div><!-- /input-group -->
-
+				
+				<div class="container-fluid input-group" id="ClassesAndLevels"> <!-- Classes/Levels-->
+					<table class="table"> <!--ClassesTable-->
+						<thead>
+							<tr>
+								<td colspan ="2"><label>Class Name</label></td>
+								<td><label>Hit Dice (HD)</label></td>
+								<td><label>Base Attack Bonus (BAB)</label></td>
+								<td><label>Skills Ranks From Class</label></td>
+								<td><label>Fortitude (FORT) Save Modifie</label></td>
+								<td><label>Reflex (REF) Save Modifier</label></td>
+								<td><label>Will (Will) Save Modifier</label></td>
+								<td><label>Level</label></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan ="2"><input type="text" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td colspan ="2"><input type="text" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td colspan ="2"><input type="text" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td colspan ="2"><input type="text" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td colspan ="2"><input type="text" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td colspan ="2"><input type="text" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan ="2"><label id="FavoredClass" aria-label="FavoredClass">Favored Class</label></td>
+								<td colspan ="8"><input type="text" class="form-control" id="FavoredClassField" aria-label="Hair"></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div><!-- /input-group -->
+				
+				<div class="container-fluid input-group" id="Skills"> <!-- Skills-->
+					<table class="table"> <!--SkillsTable-->
+						<thead>
+							<tr>
+								<td><label>Class Skill</label></td>
+								<td colspan ="3"><label>Skill Name</label></td>
+								<td><label>Total Bonus</label></td>
+								<td><label>Ability Modifier</label></td>
+								<td><label>Skill Ranks</label></td>
+								<td><label>Trained Bonus</label></td>
+								<td><label>Misc. Modifier</label></td>
+								<td><label>Misc. Modifier</label></td>
+								<td><label>Misc. Modifier</label></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Acrobatics</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Appraise</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Bluff</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Climb</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Craft:_</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Diplomacy</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Disable Device*</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Disguise</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Escape Artist</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Fly</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Handle Animal*</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Heal</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Intimidate</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Knowledge*:_</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Linguistics*</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Perception</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Perform:_</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Profession*:_</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Ride</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Sense Motive</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Sleight of Hand*</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Spellcraft*</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Stealth</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Survival</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Swim</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td colspan ="3"><label>Use Magic Device</label></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+								<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td><input type="checkbox" class="form-control" checked disabled></td>
+								<td colspan ="4"><label>Class Skill</label></td>
+								<td colspan ="6"><label>*Trained Only</label></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div><!-- /input-group -->
 			</div>
 		</div>
 	</div>
