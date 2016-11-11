@@ -28,6 +28,11 @@
 	width: 20%;
 }
 
+.ExpandableMenu [type = "checkbox"]{
+	size: 50%;
+	
+}
+
 
 
 
