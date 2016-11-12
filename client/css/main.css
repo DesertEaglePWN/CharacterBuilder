@@ -8,20 +8,15 @@
 }
 #PFCharHeader > div{
 	display: inline-block;
-	width: 80%;
 }
 
-#ClassesAndLevels > span, input{
+#ClassesAndLevels > span, input, #AbilityScores, #PFCharHeader{
 	display: inline-block;
 }
 
 #sidebar{
 	margin: 0px;
 	padding: 0px;
-}
-
-#CharHeaderInfoDiv{
-	color: blue;
 }
 
 .col-md-4
@@ -37,10 +32,6 @@
 	
 }
 
-.CharInfoField{
-	color: red;
-	
-}
 
 
 
