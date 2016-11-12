@@ -95,9 +95,9 @@
 								<img class="img-responsive" src="images/PFlogo.jpg" />;
 							</div>
 							
-							<div id = "CharHeaderInfoDiv" class="col-md-8 col-sm-8">
-								<div class ="container-fluid form-inline" id = "CharHeaderLine1" >
-									<div class = "container-fluid TextFieldClass form-group col-md-2" id="CharacterNameBox" >
+							<div id = "CharHeaderInfoDiv" class="col-md-8 col-sm-8 ">
+								<div class ="container-fluid form-inline " id = "CharHeaderLine1" >
+									<div class = "container-fluid TextFieldClass form-group col-md-2 CharInfoField" id="CharacterNameBox" >
 										<label>Character Name</label>
 										<input class = "form-control" type = "text" value = "Enter Character Name"/>
 									</div>
@@ -139,15 +139,12 @@
 										<label>Deity</label>
 										<input class = "form-control" type = "text" id = "DeityField" value = "Enter Deity"/>
 									</div>
-									<div class = "container-fluid col-md-3" id = "HomelandDiv">
+									<div class = "container-fluid col-md-3 col-md-offset-2" id = "HomelandDiv">
 										<label>Homeland</label>
 										<input class = "form-control" type = "text" id = "HomelandField" value = "Enter Homeland"/>
 									</div>
-								</div>
-							
-								<div class ="container-fluid" id = "CharHeaderLine3">
-									<div class = "container-fluid" id = "RaceInfoDiv">
-										<h1>Race</h1>
+									<div class = "container-fluid col-md-2 col-md-offset-2" id = "RaceInfoDiv">
+										<label>Race</label>
 										<select class = "form-control" >
 											<option>Core | Dwarf</option>
 											<option>Core | Elf</option>
@@ -159,8 +156,11 @@
 											<option>Other</option>
 										</select>
 									</div>
-									<div class = "container-fluid" id = "SexDiv">
-										<h1>Sex</h1>
+								</div>
+							
+								<div class ="container-fluid form-inline" id = "CharHeaderLine3">
+									<div class = "container-fluid col-md-1" id = "SexDiv">
+										<label>Sex</label>
 										<select  class = "form-control">
 											<option>Male</option>
 											<option>Female</option>
@@ -169,15 +169,15 @@
 											<option>Other</option>
 										</select>
 									</div>
-									<div class = "container-fluid" id = "Age">
-										<h1>Age</h1>
+									<div class = "container-fluid col-md-4  col-md-offset-2" id = "Age">
+										<label>Age</label>
 										<div class="input-group">
 											<input type="number" class="form-control" id="AgeYearField" aria-label="Age">
 											<div class="input-group-addon">years</div>
 										</div>
 									</div>
-									<div class = "container-fluid" id = "Height">
-										<h1>Height</h1>
+									<div class = "container-fluid col-md-1  col-md-offset-1" id = "Height">
+										<label>Height</label>
 										<div class="input-group">
 											<input type="number" class="form-control" id="HeightFtField" aria-label="HeightFeet">
 											<span class="input-group-addon">ft.</span>
@@ -185,27 +185,69 @@
 											<div class="input-group-addon">in.</div>
 										</div>
 									</div>
-									<div class = "container-fluid" id = "Weight">
-										<h1>Weight</h1>
+									<div class = "container-fluid col-md-1  col-md-offset-2" id = "Weight">
+										<label>Weight</label>
 										<div class="input-group">
 											<input type="number" class="form-control" id="Weight" aria-label="Weight">
 											<div class="input-group-addon">lbs.</div>
 											</div>
 									</div>
-									<div class = "container-fluid" id = "Hair">
-										<h1>Hair</h1>
+									<div class = "container-fluid col-md-3 col-md-offset-1" id = "Hair">
+										<label>Hair</label>
 										<div class="input-group">
 											<input type="text" class="form-control" id="HairField" aria-label="Hair">
 										</div>
 									</div>
-									<div class = "container-fluid" id = "Eyes">
-										<h1>Eyes</h1>
+									<div class = "container-fluid col-md-3" id = "Eyes">
+										<label>Eyes</label>
 										<div class="input-group">
 											<input type="text" class="form-control" id="EyesField" aria-label="Eyes">
 										</div>
-									</div>
-									
-									<div class="container-fluid input-group" id="AbilityScores"> <!-- AbilityScores-->
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>	
+</template>
+
+<template name = "DnDCharacterHeader">
+	  <div class = "TextFieldClass">
+	<h1>Character Name</h1>
+	<input type = "text" id = "CharacterNameField" value = "Enter Character Name"/>
+  </div>
+  <div class = "Dropdown Class">
+	<h1>Alignment</h1>
+	<select>
+		<option>Lawful</option>
+		<option>Neutral</option>
+		<option>Chaotic</option>
+		<option>(Unselected)</option>
+	</select>
+	<select>
+		<option>Good</option>
+		<option>Neutral</option>
+		<option>Evil</option>
+		<option>(Unselected)</option>
+	</select>
+  </div>
+  <h1>Player</h1>
+  <input type = "text" id = "PlayerNameField" value = "Enter Player Name"/>
+  <h1>Character Class</h1>
+  <input type = "text" id = "CharacterNameField" value = "Enter Character Name"/>
+  <h1>Deity</h1>
+  <input type = "text" id = "DeityField" value = "Enter Deity"/>
+  
+  
+  
+  
+
+
+  
+</template>
+
+
+<template name = "PathfinderCharInfo">
+										<div class="container-fluid input-group" id="AbilityScores"> <!-- AbilityScores-->
 										<table class="table">
 											<thead>
 												<tr>
@@ -838,51 +880,6 @@
 										</table>
 									</div><!-- /Skills-->
 
-									
-								</div>
-							</div>
-						</div>
-					</div>	
-</template>
-
-<template name = "DnDCharacterHeader">
-	  <div class = "TextFieldClass">
-	<h1>Character Name</h1>
-	<input type = "text" id = "CharacterNameField" value = "Enter Character Name"/>
-  </div>
-  <div class = "Dropdown Class">
-	<h1>Alignment</h1>
-	<select>
-		<option>Lawful</option>
-		<option>Neutral</option>
-		<option>Chaotic</option>
-		<option>(Unselected)</option>
-	</select>
-	<select>
-		<option>Good</option>
-		<option>Neutral</option>
-		<option>Evil</option>
-		<option>(Unselected)</option>
-	</select>
-  </div>
-  <h1>Player</h1>
-  <input type = "text" id = "PlayerNameField" value = "Enter Player Name"/>
-  <h1>Character Class</h1>
-  <input type = "text" id = "CharacterNameField" value = "Enter Character Name"/>
-  <h1>Deity</h1>
-  <input type = "text" id = "DeityField" value = "Enter Deity"/>
-  
-  
-  
-  
-
-
-  
-</template>
-
-
-<template name = "PathfinderCharInfo">
-  
 </template>
 
 <template name = "DnDCharInfo">

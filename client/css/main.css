@@ -20,6 +20,10 @@
 	padding: 0px;
 }
 
+#CharHeaderInfoDiv{
+	color: blue;
+}
+
 .col-md-4
 {
 	margin: 0px;
@@ -30,6 +34,11 @@
 
 .ExpandableMenu [type = "checkbox"]{
 	size: 50%;
+	
+}
+
+.CharInfoField{
+	color: red;
 	
 }
 
