@@ -91,11 +91,11 @@
 <template name="PathfinderCharacterHeader">
 					<div class = "container" id = PFCharHeader height="150px">
 						<div class="row">
-							<div id = "CharSheetImageDiv" class="col-md-4 col-sm-2">
+							<div id = "CharSheetImageDiv" class="col-md-4 hidden-xs hidden-sm">
 								<img class="img-responsive" src="images/PFlogo.jpg" />;
 							</div>
 							
-							<div id = "CharHeaderInfoDiv" class="col-md-8 col-sm-8 ">
+							<div id = "CharHeaderInfoDiv" class="col-md-8 col-sm-12 col-xs-12">
 								<div class ="container-fluid form-inline " id = "CharHeaderLine1" >
 									<div class = "container-fluid TextFieldClass form-group col-md-2 CharInfoField" id="CharacterNameBox" >
 										<label>Character Name</label>
@@ -105,14 +105,14 @@
 									<div class = "container-fluid Dropdown Class col-md-6 col-md-offset-4" id = "AlignmentDropdownDiv">
 										<label>Alignment</label>
 										<div class="row">
-											<div class="btn-group col-md-12" role="group" data-toggle="buttons">
-											  <label class="btn btn-default col-md-4">
+											<div class="btn-group col-md-12 col-sm-12 col-xs-12" role="group" data-toggle="buttons">
+											  <label class="btn btn-default col-md-4 col-sm-4 col-xs-4">
 												<input type="radio" name="options" id="option1" autocomplete="off" data-placement="left" title="Tooltip on left"> Lawful
 											  </label>
-											  <label class="btn btn-default col-md-4 active">
+											  <label class="btn btn-default col-md-4 col-sm-4 col-xs-4active">
 												<input type="radio" name="options" id="option2" autocomplete="off" checked> Neutral
 											  </label>
-											  <label class="btn btn-default col-md-4">
+											  <label class="btn btn-default col-md-4 col-sm-4 col-xs-4">
 												<input type="radio" name="options" id="option3" autocomplete="off"> Chaotic
 											  </label>
 											</div>
