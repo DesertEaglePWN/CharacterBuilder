@@ -332,19 +332,24 @@
 													<div class="btn-group">
 														<input type="text" class="form-control" id="HairField" aria-label="Hair">
 														<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														<span class="caret"></span>
-														<span class="sr-only">Toggle Dropdown</span>
+															<span class="caret"></span>
+															<span class="sr-only">Toggle Dropdown</span>
 														</button>
-														<ul class="dropdown-menu">
-															<li>Core | Dwarf</li>
-															<li>Core | Elf</li>
-															<li>Core | Gnome </li>
-															<li>Core | Half Elf</li>
-															<li>Core | Half Orc</li>
-															<li>Core | Halfling</li>
-															<li>Core | Human</li>
-															<li>Other</li>
-														</ul>
+															<ul class="dropdown-menu">
+																<li>Core | Barbarian</li>
+																<li>Core | Bard</li>
+																<li>Core | Cleric </li>
+																<li>Core | Druid</li>
+																<li>Core | Fighter</li>
+																<li>Core | Monk</li>
+																<li>Core | Paladin</li>
+																<li>Core | Ranger</li>
+																<li>Core | Rogue</li>
+																<li>Core | Sorcerer</li>
+																<li>Core | Wizard</li>
+																<li>Other</li>
+															</ul>
+														
 													</div>
 													</td>
 													<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
@@ -509,7 +514,30 @@
 											</tfoot>
 										</table>
 									</div><!-- /ArmorClass -->
-								
+
+									<div class="container-fluid input-group" id="CombatManeuvers"> <!-- CombatManeuvers -->
+										<table class="table"> <!-- CombatManeuversTable -->
+											<thead>
+												<tr>
+													<td colspan="2"><label>Combat Maneuvers</label></td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><label>Combat Maneuver Bonus</label></td>
+													<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+												</tr>
+												<tr>													
+													<td><label>Combat Maneuver Defense</label></td>
+													<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+												</tr>
+											</tbody>
+											<tfoot>
+											</tfoot>
+										</table>
+									</div><!-- /CombatManeuvers -->		
+
+									
 									<div class="container-fluid input-group" id="Saves"> <!-- Saves -->
 										<table class="table"> <!-- SavesTable -->
 											<thead>
@@ -535,6 +563,28 @@
 											</tfoot>
 										</table>
 									</div><!-- /Saves -->
+
+									<div class="container-fluid input-group" id="DefenseModifiers"> <!-- DefenseModifiers -->
+										<table class="table"> <!-- DefenseModifiersTable -->
+											<thead>
+												<tr>
+													<td colspan="2"><label>Defense Modifiers</label></td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><label>Damage Reduction</label></td>
+													<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+												</tr>
+												<tr>													
+													<td><label>Spell Resistance</label></td>
+													<td><input type="number" class="form-control" id="HairField" aria-label="Hair"></td>
+												</tr>
+											</tbody>
+											<tfoot>
+											</tfoot>
+										</table>
+									</div><!-- /DefenseModifiers -->		
 									
 									<div class="container-fluid input-group" id="Skills"> <!-- Skills-->
 										<table class="table"> <!--SkillsTable-->
@@ -872,10 +922,32 @@
 											<tfoot>
 												<tr>
 													<td><input type="checkbox" checked disabled></td>
-													<td colspan ="4"><label>Class Skill</label></td>
+													<td colspan ="2"><label>Class Skill</label></td>
 													<td colspan ="6"><label>*Trained Only</label></td>
 													
 												</tr>
+												<table>
+													<thead>
+														<tr>
+															<td><label>Languages</label></td>
+														</tr>
+													</thead>
+													<body>
+														<tr>
+															<td>
+															<div class="input-group">
+																<input class = "form-control" type = "text" value = "Language Name"/>
+																<button class="btn btn-danger"> - </button>
+															</div>
+															
+															</td>
+															
+														</tr>
+														<tr>
+															<td><button class="btn btn-success"> + </button></td>
+														</tr>
+													</body>
+												</table>
 											</tfoot>
 										</table>
 									</div><!-- /Skills-->
