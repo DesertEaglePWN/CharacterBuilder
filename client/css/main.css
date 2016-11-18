@@ -19,6 +19,7 @@
 	padding: 0px;
 }
 
+/*
 .col-md-4
 {
 	margin: 0px;
@@ -26,7 +27,7 @@
 	display: inline-block;
 	width: 20%;
 }
-
+*/
 .ExpandableMenu [type = "checkbox"]{
 	size: 50%;
 	
