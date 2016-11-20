@@ -9,6 +9,9 @@
 #PFCharHeader > div{
 	display: inline-block;
 }
+#PFCharHeader{
+	padding: 1%;
+}
 
 #ClassesAndLevels > span, input, #AbilityScores, #PFCharHeader{
 	display: inline-block;
@@ -20,11 +23,15 @@
 }
 
 #CharHeaderInfoDiv{
-	background-color: #e6e6e6;
+	background-color: ##f2f2f2;
 	padding: 1%;
 	border: 1px solid black;
 }
 
+#CharacterSheetBody{
+	background-color: #cccccc;
+	padding: 1%;
+}
 /*
 .col-md-4
 {
