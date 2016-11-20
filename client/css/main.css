@@ -19,6 +19,12 @@
 	padding: 0px;
 }
 
+#CharHeaderInfoDiv{
+	background-color: #e6e6e6;
+	padding: 1%;
+	border: 1px solid black;
+}
+
 /*
 .col-md-4
 {
