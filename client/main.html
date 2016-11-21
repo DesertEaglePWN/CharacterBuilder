@@ -228,8 +228,44 @@
 <!-- ##### PATHFINDER CHARACTER INFO TEMPLATE #########  -->
 <template name="PathfinderCharInfo">
 
+<!-- AbilityScores -->
+<div id="AbilityScoresCDiv" class="col-md-12">
+	<div class="row">
+		<div id="StrengthAbilityScore" class="CollapsibleModifierDiv col-md-3 col-md-offset-1 panel panel-default">
+			<span>Strength</span>
+			<div class="form-inline">
+			
+			<div class="input-group">
+				<label id="StrScoreLabel" class="input-group-addon">Score</label>
+				<input id="StrScoreField" type="number" class="form-control col-md-3">
+			</div>
+			<div class="input-group">
+				<label id="StrMODLabel" class="input-group-addon">MOD</label>
+				<input id="StrMODField" type="number" class="form-control col-md-3">
+			</div>
+			
+			</div>
+		</div>
+		<div id="DexterityAbilityScore" class="CollapsibleModifierDiv col-md-3 col-md-offset-1">
+			<div>
+				<div class="input-group col-md-6">
+					<label id="DexScoreLabel" class="input-group-addon">Score</label>
+					<input id="DexScoreField" type="number">
+				</div>
+				<div class="input-group col-md-6">
+					<label id="DexMODField">MOD</label>
+					<input id="DexMODField" type="number">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Ability Scores -->
 
-<!-- AbilityScores-->
+
+
+<!-- OLD AbilityScores TABLE-->
+<!--
 <div id="AbilityScores" class="panel panel-default" >
 	<table class="table">
 		<thead>
@@ -294,7 +330,8 @@
 		</tbody>
 	</table>
 </div>
-<!-- /AbilityScores -->
+-->
+<!-- END OLD AbilityScores TABLE-->
 
 
 <!-- Classes/Levels-->									

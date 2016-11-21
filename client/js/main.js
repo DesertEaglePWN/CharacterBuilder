@@ -10,3 +10,7 @@ function updateCharName()
 	var charName = charNameBox.value;
 	alert(charName);
 };
+
+function expandDivOnClick (){
+	
+}
