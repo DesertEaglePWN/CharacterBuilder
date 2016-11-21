@@ -32,6 +32,13 @@
 	background-color: #cccccc;
 	padding: 1%;
 }
+
+
+.vcenter{
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
 /*
 .col-md-4
 {

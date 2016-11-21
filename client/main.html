@@ -229,23 +229,28 @@
 <template name="PathfinderCharInfo">
 
 <!-- AbilityScores -->
-<div id="AbilityScoresCDiv" class="col-md-12">
+<div id="AbilityScoresCDiv" class="col-md-12" data-toggle="collapse" data-target="#StrengthAttrCollapse">
 	<div class="row">
 		<div id="StrengthAbilityScore" class="CollapsibleModifierDiv col-md-3 col-md-offset-1 panel panel-default">
-			<span>Strength</span>
-			<div class="form-inline">
-			
-			<div class="input-group">
-				<label id="StrScoreLabel" class="input-group-addon">Score</label>
-				<input id="StrScoreField" type="number" class="form-control col-md-3">
+			<div class="col-md-4">
+				<div class="text-center vcenter"><b>Strength</b></div>
 			</div>
-			<div class="input-group">
+			<div class="col-md-4">
+				<span id="StrScoreLabel" class="input-group-addon">Score</span>
+				<input id="StrScoreField" type="number" class="form-control">
+			</div>
+			<div class="col-md-4">
 				<label id="StrMODLabel" class="input-group-addon">MOD</label>
-				<input id="StrMODField" type="number" class="form-control col-md-3">
+				<input id="StrMODField" type="number" class="form-control">
 			</div>
-			
+			<!-- Collapsible Strength Content -->
+			<div id="StrengthAttrCollapse" class="collapse">
+				<p>This Information Should Be Hidden When The Div Is Collapsed</p>
 			</div>
+			<!-- END Collapsible Strength Content -->
 		</div>
+
+		
 		<div id="DexterityAbilityScore" class="CollapsibleModifierDiv col-md-3 col-md-offset-1">
 			<div>
 				<div class="input-group col-md-6">
